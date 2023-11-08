@@ -2,7 +2,7 @@
     "expo": {
         "name": "CardVault",
         "slug": "cardvault",
-        "version": "1.5.2",
+        "version": "1.6.0",
         "orientation": "portrait",
         "icon": "./assets/icon.png",
         "userInterfaceStyle": "automatic",
@@ -15,7 +15,7 @@
         "ios": {
             "supportsTablet": true,
             "bundleIdentifier": "com.bhaumik.tandan.cardvault",
-            "buildNumber": "12"
+            "buildNumber": "13"
         },
         "android": {
             "adaptiveIcon": {
@@ -23,7 +23,7 @@
                 "backgroundColor": "#000"
             },
             "package": "com.bhaumik.tandan.cardvault",
-            "versionCode": 12
+            "versionCode": 13
         },
         "web": {
             "favicon": "./assets/favicon.png"
@@ -33,7 +33,19 @@
                 "projectId": "f26cf6f9-5809-4aa2-bf74-370cdbacf72e"
             }
         },
-        "owner": "cardvault"
+        "owner": "cardvault",
+        "plugins": [
+            [
+              "expo-build-properties",
+              {
+                "android": {
+                    "compileSdkVersion": 31,
+                    "targetSdkVersion": 31,
+                    "buildToolsVersion": "31.0.0"
+                }
+              }
+            ]
+          ]
     },
     "react-native-google-mobile-ads": {
         "android_app_id": "ca-app-pub-5499479031752321~2533055801",

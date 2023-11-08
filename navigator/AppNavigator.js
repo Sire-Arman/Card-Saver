@@ -6,6 +6,7 @@ import CardNavigator from './CardNavigator';
 import SettingsNavigator from './SettingsNavigator';
 import BannerAd from '../components/BannerAd';
 import PAGES from '../constants/pages';
+import CardScan from '../pages/CardScan';
 
 const Tab = createBottomTabNavigator();
 const AppNavigator = (
@@ -34,6 +35,17 @@ const AppNavigator = (
                         <EvilIcons name="gear" size={size} color={color} />
                     ),
                     tabBarLabel: PAGES.SETTINGS,
+                    header: () => <BannerAd />,
+                }}
+            />
+            <Tab.Screen
+                name={"CardScan"}
+                component={CardScan}
+                options={{
+                    tabBarIcon: ({ color, size }) => (
+                        <EvilIcons name="gear" size={size} color={color} />
+                    ),
+                    tabBarLabel: PAGES.CARD_SCAN,
                     header: () => <BannerAd />,
                 }}
             />
