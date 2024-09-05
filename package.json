@@ -55,7 +55,8 @@
     "react-native-view-shot": "3.7.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "metro-config": "^0.80.9"
   },
   "private": true,
   "lint-staged": {

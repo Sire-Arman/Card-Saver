@@ -28,11 +28,6 @@
         "web": {
             "favicon": "./assets/favicon.png"
         },
-        "extra": {
-            "eas": {
-                "projectId": "f26cf6f9-5809-4aa2-bf74-370cdbacf72e"
-            }
-        },
         "owner": "cardvault",
         "plugins": [
             [
